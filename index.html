@@ -18,6 +18,7 @@
         <div class="col-md-6 mx-auto">
           <div class="card text-center mt-5">
             <div class="card-body">
+              <div id="error-message">Заполните всe поля!!!</div>
               <h3 class="heading display-5 pb-3">Кредитный калькулятор</h3>
               <form id="loan-form">
                 <div class="mb-3">
@@ -56,20 +57,18 @@
                   </button>
                 </div>
               </form>
-              <!--               
+
               <div id="loader">
                 <img class="w-100" src="images/loader.gif" alt="Loader" />
-              </div> -->
+              </div>
 
               <div id="output">
                 <h4>Результат</h4>
                 <div class="mb-3">
                   <div class="input-group">
-                    <span class="input-group-text" id="monthly-payment">
-                      Месячный платеж</span
-                    >
+                    <span class="input-group-text"> Месячный платеж</span>
                     <input
-                      id="amount"
+                      id="monthly-payment"
                       type="number"
                       class="form-control"
                       disabled
@@ -80,7 +79,7 @@
                   <div class="input-group">
                     <span class="input-group-text"> Итого</span>
                     <input
-                      id="total"
+                      id="total-payment"
                       type="number"
                       class="form-control"
                       disabled
@@ -89,7 +88,7 @@
                 </div>
                 <div class="mb-3">
                   <div class="input-group">
-                    <span class="input-group-text" id="total-interest">
+                    <span class="input-group-text">
                       Итого процентная ставка</span
                     >
                     <input
